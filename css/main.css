@@ -1,0 +1,250 @@
+* {
+    font-family: sans-serif, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.title_container {
+    height: 10vh;
+    background-color: rgb(6, 46, 98);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title_container .title_item1 {
+    border: 1px solid #a09fa1;
+    flex: 0.8 1 0;
+    text-align: center;
+    margin: 20px;
+    height: 70%;
+    border-radius: 5%;
+    /*
+    background-image: url("./main.jpg");
+    background-repeat: no-repeat;
+    */
+    position: relative;
+}
+
+.title_container .title_item1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.title_container .title_item2 {
+    /* border: 1px dotted; */
+    flex: 9 1 0;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.title_container .title_item3 {
+    /* border: 1px solid #a09fa1; */
+    flex: 0.8 1 0;
+    text-align: center;
+    margin: 3px;
+    height: 80%;
+    border-radius: 5%;
+    /*
+    background-image: url("./main.jpg");
+    background-repeat: no-repeat;
+    */
+    position: relative;
+}
+
+.nav_container {
+    height: 0.5vh;
+    background-color: #a09fa1;
+}
+
+.nav_container .wrap {
+    /* border: 1px dotted; */
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_container .wrap .nav_items {
+    /* border: 1px dotted; */
+    /* width: 12%; */
+    height: 100%;
+    /* margin: 3px; */
+}
+
+.content_container {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_container .content_center {
+    /* border: 2px solid rgb(125, 9, 249); */
+    flex: 8 1 0; /* 세로 분할 비율 마지막 flex-basic을 0으로 줘서 여백을 모두 사용 하도록 */
+}
+
+.content_container .content_center .content_item {
+    text-align: center;
+    height: 80vh;
+    overflow-y: auto; /* height를 주어야 스크롤이 생긴다. */
+    position: relative;
+}
+
+.content_container .content_center .content_item p {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    /* font-size: 1.6rem; *//* 24px */
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.content_container .content_center .content_item img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.content_container .content_aside1 {
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: solid;
+    border-color: #a09fa1;
+    background-color: #f6f5f0;
+    flex: 1 1 0; /* 세로 분할 비율 마지막 flex-basic을 0으로 줘서 여백을 모두 사용 하도록 */
+    display: flex;
+    flex-direction: column;
+}
+
+.content_container .content_aside1 .content_aside1_item {
+    /* border: 1px dotted; */
+    height: 20%; /* 부모컨테이너(content_aside1) 20% 사용 */
+    margin: 0.5vw;
+}
+
+.content_container .content_aside1 a {
+    color: #59585a; 
+    text-decoration: none;
+    font-size: 0.7vw;
+}
+
+/* ul 전체 들여쓰기 없애기 */
+.content_container .content_aside1 .content_aside1_item ul {
+    color: #363637;
+    margin-left: 0;
+    padding-left: 0;
+    font-weight: bold;
+    font-size: 0.7vw;
+    line-height: 1.2vw; /* 행간 스타일 */
+}
+
+/* li depth1 */
+.content_container .content_aside1 .content_aside1_item .li_depth1 {
+    list-style: none;
+    margin-left: 1vw; /* 화면 크기에 따라 달라지도록 */
+    font-size: 0.7vw;
+}
+
+/* li depth2 */
+.content_container .content_aside1 .content_aside1_item .li_depth2 {
+    list-style-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' height='10' width='10' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'><polyline points='20 6 9 17 4 12'></polyline></svg>");
+    margin-left: 1.5vw; /* 화면 크기에 따라 달라지도록 */
+    font-size: 0.7vw;
+}
+
+.content_container .content_aside2 {
+    /* border: 1px dotted; */
+    background-color: #f6f5f0;
+    border-top: none;
+    border-left: solid;
+    border-bottom: none;
+    border-right: none;
+    border-color: #a09fa1;
+    flex: 1 1 0; /* 세로 분할 비율 마지막 flex-basic을 0으로 줘서 여백을 모두 사용 하도록 */
+    display: flex;
+    flex-direction: column;
+}
+
+.content_container .content_aside2 a {
+    color: #59585a; 
+    text-decoration: none;
+    font-size: 0.7vw;
+}
+
+.content_container .content_aside2 .content_aside2_item {
+    /* border: 1px dotted; */
+    height: 20%; /* 부모컨테이너(content_aside2) 20% 사용 */
+    /* margin: 5px; */
+    margin: 0.5vw;
+}
+
+/* ul 전체 들여쓰기 없애기 */
+.content_container .content_aside2 .content_aside2_item ul {
+    color: #363637;
+    margin-left: 0;
+    padding-left: 0;
+    font-weight: bold;
+    font-size: 0.7vw;
+    line-height: 1.2vw; /* 행간 스타일 */
+    display: block;
+}
+
+/* li depth1 */
+.content_container .content_aside2 .content_aside2_item .li_depth1 {
+    list-style: none;
+    margin-left: 1vw; /* 화면 크기에 따라 달라지도록 */
+    font-size: 0.7vw;
+}
+
+/* li depth2 */
+.content_container .content_aside2 .content_aside2_item .li_depth2 {
+    list-style-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' height='10' width='10' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'><polyline points='20 6 9 17 4 12'></polyline></svg>");
+    margin-left: 1.5vw; /* 화면 크기에 따라 달라지도록 */
+    font-size: 0.7vw;
+}
+
+.nav_container2 {
+    height: 1vh;
+    background-color: #E6E7E8;
+}
+
+.footer_container {
+    height: 7vh;
+    background-color: rgb(6, 46, 98);;
+}
+
+.footer_container .wrap {
+    /* border: 1px dotted; */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_container .wrap .footer_items1 {
+    /* border: 1px dotted; */
+    flex: 1 1 0;
+    margin: 3px;
+}
+.footer_container .wrap .footer_items2 {
+    /* border: 1px dotted; */
+    flex: 8 1 0;
+    margin: 0.7vw;
+    text-align: center;
+    color: white;
+    font-size: 0.9vw;
+    font-weight: bold;
+}

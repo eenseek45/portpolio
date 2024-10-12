@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    background-color: #efe7e7ee;
+    height: 30px;
+    position: relative;
+}
+
+header .wrap_depth1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #efe7e7ee;
+    width: 360px;
+    height: 30px;
+}
+
+header .wrap_depth2 {
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #efe7e7ee;
+    width: 360px;
+    height: 30px;
+}
+
+header .wrap_depth3 {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    background-color: #efe7e7ee;
+    height: 30px;
+    transform: translate(-50%, -50%); /* div 가운데 */
+    color: blue;
+    font-weight: bold;
+    line-height: 30px;  /* div 안 숫자 수직정렬 */
+    /* padding: 10px 0; */
+}
+
+header .wrap_depth1 .ul_item1 {
+    width: 33%;
+    border: 1px;
+    text-align: center;
+}
+
+header .wrap_depth1 .ul_item2 {
+    width: 33%;
+    border: 1px;
+    text-align: center;
+}
+
+header .wrap_depth1 .ul_item3 {
+    width: 33%;
+    border: 1px;
+    text-align: center;
+}
+
+header .wrap_depth2 .ul_item1 {
+    width: 33%;
+    border: 1px;
+    text-align: center;
+}
+
+header .wrap_depth2 .ul_item2 {
+    width: 33%;
+    border: 1px;
+    text-align: center;
+}
+
+header .wrap_depth3 .ul_item3 {
+    width: 33%;
+    border: 1px;
+    text-align: center;
+}
+
+
+/*
+content {
+    background-color: #efe7e7ee;
+    height: 30px;
+    position: relative;
+}
+
+
+content .wrap_depth22 {
+    background-color: #efe7e7ee;
+    height: 30px;
+    border: 1px solid;
+    position: absolute;
+}
+*/
+
+/*
+footer {
+    background-color: #efe7e7ee;
+    height: 30px;
+    position: relative;
+}
+
+footer .wrap_depth33 {
+    background-color: #efe7e7ee;
+    height: 30px;
+    border: 1px solid;
+    position: absolute;
+}
+*/
